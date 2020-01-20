@@ -1,5 +1,0 @@
-Docker Quick Start:
-
-
-docker run -d -p 9001:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin --name keycloak jboss/keycloak    
-docker exec keycloak /opt/jboss/keycloak/bin/jboss-cli.sh --connect "/subsystem=undertow/server=default-server/http-listener=default:write-attribute(name=proxy-address-forwarding, value=true)"
